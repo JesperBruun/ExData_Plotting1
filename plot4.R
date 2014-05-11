@@ -17,9 +17,8 @@ with(hpc,{
   with(hpc,{
     lines(hpc$dt,hpc$Sub_metering_2, col="red")
     lines(hpc$dt,hpc$Sub_metering_3, col="blue")
-    legend("topright",lty=1,col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+    legend("topright",lty=1,col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty="n")
   })
   plot(hpc$dt,hpc$Global_reactive_power,ylab="Global_reactive_power",xlab="datetime",type = "l")
   })
-
 dev.off()
